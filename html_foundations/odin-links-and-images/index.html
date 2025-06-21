@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links lesson</title>
+</head>
+<body>
+
+    <!-- 
+        Different quotations, for fun:
+        &ldquo;
+        &rdquo;
+        &lsquo;
+        &rsquo; 
+    -->
+    <h1> &ldquo; Homepage</h1>
+
+    <!-- 
+        Need to use 'a'nchor to wrap text as link.
+
+        This opens the link in the same tab, target
+        attribute is set to '_self' by default
+
+        This is a 'relative' link, i.e link to 
+        another page within our website with
+        the file path. 'Absolute' links are links 
+        to the actual domain
+
+        './' in front pages is for looking for the
+        file relative to the current dir
+     -->
+    <a href="./pages/about.html">About</a>
+
+    <!-- 
+        Setting target = "_blank" opens a new tab.
+
+        rel describes relation btwn current page and
+        linked document. 
+        
+        'noopener' ensures the link can't interact 
+        w/ the original page. JS can be used to
+        interact w/ the original page which is 
+        dangerous.
+
+        'noreferrer' prevents new page from knowing
+        where the user came from and also prevents
+        the original page from being accessed.
+     -->
+    <a rel="noopener noreferrer" target="_blank" href="https://www.theodinproject.com/about">About the Odin Project</a>
+</body>
+</html>
